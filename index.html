@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='notas'>
+<head>
+    <meta charset="UTF-8">
+    <title>First App angular</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type='text/javascript' src='vendor/angular.min.js'></script>
+    <script type='text/javascript' src='javascript/app.js'></script>
+    <script type='text/javascript' src='javascript/services/routes.js'></script>
+    <style>
+        .ng-valid input{
+            background-color: green;
+        }
+        .ng-invalid input{
+            background-color: red;
+        }
+    </style>
+</head>
+<body >
+<ul>
+    <a ng-repeat="note in notes" ng-href="#/notes/{{note.id}}"></a>
+</ul>
+<div ng-view></div>
+
+<script type='text/javascript' src='vendor/angular-route.js'></script>
+</body>
+</html>

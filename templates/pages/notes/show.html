@@ -1,0 +1,11 @@
+<div class="well" style="margin: 5px;">
+    <a ng-repeat="note in indexController.notes">
+        <div title="{{note.title}}">
+            <div ng-if="icon">
+                <i>{{note.icon}}</i>
+            </div>
+
+            <h2>{{note.title}}</h2>
+        </div>
+    </a>
+</div>
